@@ -1,40 +1,29 @@
 /* styles.css */
 
-/* Reset default margin and padding for clean layout */
-body, h1, h2, h3, h4, h5, h6, ul, ol, li, p {
+/* Reset default margin and padding */
+body,
+ul {
     margin: 0;
     padding: 0;
 }
 
-/* Style the header */
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+/* Style the navigation links */
+nav {
+    display: flex; /* Align links horizontally */
 }
 
-/* Style the navigation inside the header */
-header nav {
-    text-align: center;
-}
-
-/* Style the links/buttons */
-header nav a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 0 5px;
+nav a {
+    display: block;
     text-decoration: none;
-    color: #fff;
-    background-color: #555;
-    border: 2px solid #555;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #333;
     border-radius: 5px;
-    transition: background-color 0.3s, border-color 0.3s;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s; /* Smooth color transition */
 }
 
-/* Hover effect on links/buttons */
-header nav a:hover {
-    background-color: #fff;
-    color: #333;
-    border-color: #fff;
+nav a:hover {
+    background-color: #333; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
 }
