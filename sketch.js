@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(1000, 200);
+  createCanvas(windowWidth, 100); 
   textAlign(CENTER, CENTER);
   textSize(64);
   textFont('Brush Script MT');
@@ -7,6 +7,6 @@ function setup() {
 
 function draw() {
   background(0);
-  fill(255); 
-  text('Matthew David', width / 2, height / 2);
+  fill(255);
+  text('Matthew David', width / 2, height / 2); 
 }
