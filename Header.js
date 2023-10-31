@@ -1,13 +1,12 @@
-let font;
-
-function preload() {
-  font = loadFont('fonts/Edu_QLD.ttf');
+function setup() {
+  createCanvas(1000, 200);
+  textAlign(CENTER, CENTER);
+  textSize(64);
+  textFont('Brush Script MT');
 }
 
-function setup() {
-  createCanvas(800, 400);
-  textFont(font);
-  textSize(60);
-  fill(0);
-  text("Matthew David", 50, 120); //
+function draw() {
+  background(0);
+  fill(255); 
+  text('Matthew David', width / 2, height / 2);
 }
